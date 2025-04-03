@@ -1,0 +1,12 @@
+{%extends 'index.html'%}
+{%block content %}
+<div>
+    <form method="post" action="">
+        {%csrf_token%}
+        <p> Are you sure that you want to delete {{data.name}}</p>
+        <button> <a href={%url 'home' %}>Cancel</a> </button>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+
+{%endblock%}

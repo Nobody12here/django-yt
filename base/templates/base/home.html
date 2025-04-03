@@ -17,6 +17,11 @@
                 update room
             </a>
         </div>
+        <div>
+            <a href={%url 'delete-room' pk=room.id %}>
+                Delete room
+            </a>
+        </div>
         <hr>
 
         <a href={% url 'rooms' room.id%}>
