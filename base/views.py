@@ -45,5 +45,5 @@ def deleteRoom(request, pk):
     if request.method == "POST":
         room.delete()
         return redirect("home")
-    context = {"data": room.pk}
+    context = {"data": room}
     return render(request, "base/delete_form.html", context)
